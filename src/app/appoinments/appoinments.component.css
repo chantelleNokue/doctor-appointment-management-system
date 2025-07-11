@@ -1,0 +1,29 @@
+.bckgrnd {
+  background-color: rgb(243, 224, 238);
+}
+.ngtp {
+  margin-top: 70px;
+  margin-left: 5px;
+  border: 2px solid rgb(184, 182, 182);
+  border-radius: 5px;
+  max-width: 800px;
+}
+
+.scndbrdr {
+  border: 2px solid rgb(184, 182, 182);
+  border-radius: 5px;
+  display: block;
+   float: right;
+   cursor: pointer;
+   z-index: 3;
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 380px;
+   margin-top: 135px;
+}
+.mat-raised-button {
+  width: 50px;
+  height: 50px;
+  float: right;
+ }

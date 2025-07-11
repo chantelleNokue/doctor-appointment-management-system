@@ -1,0 +1,24 @@
+
+
+<mat-card class="example-card">
+  <mat-card-header class="tcntr" >
+    <mat-card-title >logedin To The System </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form  class="example-form"  (ngSubmit)=" onSubmit()">
+
+    <mat-form-field class="example-full-width">
+      <input  matInput placeholder="Username"
+      [(ngModel)]="patient.username" name="username">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Email"
+      [(ngModel)]="patient.email" name="email"></textarea>
+    </mat-form-field>
+
+    <button type="submit"  mat-raised-button color="accent">Login</button>
+  </form>
+
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,60 @@
+<div class="ngtp">
+  <h1 style="text-align: center;">BOOKINGS</h1>
+  <p  style="text-align: center;">The Doctor is going to reply you soon with in 4 hours </p>
+  <p style="text-align: center;">So you can view the appoinments below for today </p>
+  <p style="text-align: center;">Using the button below</p>
+
+  <ul>
+    <li *ngFor="let appnmnt of appoinmnt">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header class="bckgrnd">
+            <mat-panel-title>
+              My name is: Ashton
+
+
+            </mat-panel-title>
+            <mat-panel-description>
+               Currently {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>My problem is: {{appnmnt.description}}</p>
+          <button mat-fab color="accent"  aria-label="Example icon button with a delete icon"
+            class="mat-raised-button" (click)="deleteAppnmntss(id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+
+      <br>
+
+
+    </li>
+  </ul>
+
+  <div  class="example-button-container">
+    <button *ngIf="!seeitt" (click) ="seeitt = true" mat-mini-fab color="accent"
+       aria-label="Example icon button with a plus one icon"
+       (click)="getAppinmty()"
+       >
+       <mat-icon>get_app</mat-icon>    </button>
+
+  </div>
+
+
+
+
+<div class="scndbrdr">
+  <h1>About Us</h1>
+  <p >Modern hospital software helps with reducing
+   patient wait times. A doctor appointment mobile app
+    enables patients to monitor the schedule of the doctor
+    they need to see. They can find a slot most suitable
+     for them and check themselves in immediately. Moreover,
+     the doctor/patient appointment system
+  sends notifications to both patients and doctors when
+  there is an upcoming appointment.
+</p>
+</div>
